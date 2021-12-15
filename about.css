@@ -1,0 +1,274 @@
+
+.about_wrap {
+
+  margin-top:50px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+
+}
+
+.item .txt {
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.item .pic {
+  width: 55%;
+}
+
+.item .pic img {
+  width: 100%;
+}
+
+.item> :first-child {
+  margin-right: -10%;
+}
+
+.item:nth-child(1) .txt {
+  background-color: #B1CCCD;
+
+
+}
+
+.item:nth-child(2) .txt {
+  background-color: #828F85;
+}
+
+.item:nth-child(3) .txt {
+  background-color: #DEBEB3;
+}
+
+@media screen and (max-width: 930px) {
+
+  .item .txt {
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 575px) {
+  .item .txt {
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+}
+
+
+ * {
+	 outline-width: 0;
+
+}
+
+ #cubeContainer {
+	 height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ #cubeWrapper {
+	 width: 650px;
+	 display: flex;
+	 flex-direction: column;
+}
+ #cubes {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-wrap: wrap;
+}
+ .head {
+	 text-align: center;
+}
+ .head h1 {
+	 font-weight: 400;
+	 position: relative;
+}
+ .head h1:before, .head h1:after {
+	 content: "";
+	 height: 1px;
+	 width: 60px;
+	 background: #aaa;
+	 display: block;
+	 position: absolute;
+	 top: 50%;
+}
+ .head h1:before {
+	 left: 0;
+}
+ .head h1:after {
+	 right: 0;
+}
+
+.p1 {background: url('https://source.unsplash.com/O3ymvT7Wf9U') center;}
+.p2 {background: url('https://source.unsplash.com/nJHvhXS4C0U') center;}
+.p3 {background: url('https://source.unsplash.com/_7LbC5J-jw4') center;}
+.p4 {background: url('https://source.unsplash.com/y3kC_7Qhmjk') center;}
+.p5 {background: url('https://source.unsplash.com/W7b3eDUb_2I') center;}
+.p6 {background: url('https://source.unsplash.com//AndE50aaHn4') center;}
+ .cube {
+	 height: 200px;
+	 width: 200px;
+	 background-size: cover;
+	 border: 5px solid #fff;
+	 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: relative;
+	 margin-right: 10px;
+	 margin-bottom: 10px;
+}
+ .cube .name {
+	 position: absolute;
+	 bottom: 15px;
+	 left: 15px;
+	 text-shadow: 0 1px 3px #000;
+	 z-index: 3;
+}
+ .cube .name h1 {
+	 font-size: 16px;
+	 color: #fff;
+	 margin: 0;
+	 user-select: none;
+}
+ .cube .name p {
+	 color: #fff;
+	 margin: 0;
+	 font-size: 14px;
+	 user-select: none;
+}
+ .cube .content {
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: relative;
+	 flex-direction: column;
+	 opacity: 0;
+	 transition: 0.5s ease;
+	 z-index: 2;
+}
+ .cube .content ul {
+	 padding: 0;
+	 margin: 0 0 55px 0;
+	 cursor: default;
+	 text-align: center;
+}
+ .cube .content ul li {
+	 list-style: none;
+	 display: inline-block;
+	 margin: 0 11.05px 10px 11.05px;
+	 top: 40px;
+	 position: relative;
+	 opacity: 0;
+	 transition: 0.3s ease;
+}
+ .cube .content ul li a {
+	 display: block;
+	 color: #fff;
+	 font-size: 20px;
+	 width: 42px;
+	 height: 42px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 border-radius: 5px;
+	 transition: 0.3s ease;
+}
+ .cube .content ul li a:hover {
+	 background: rgba(255, 255, 255, 0.2);
+}
+ .cube:hover .content {
+	 opacity: 1;
+}
+ .cube:hover .content li {
+	 top: 15px;
+	 opacity: 1;
+	 transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+ .cube:hover .content li:nth-child(2) {
+	 transition-delay: 0.2s;
+}
+ .cube:hover .content li:nth-child(3) {
+	 transition-delay: 0.4s;
+}
+ .cube:hover .content li:nth-child(4) {
+	 transition-delay: 0.6s;
+}
+ .cube:hover .content h1 {
+	 top: 0;
+}
+ .cube:hover .content p {
+	 top: 10px;
+}
+ .cube:hover .innerBorder {
+	 width: 90%;
+	 height: 90%;
+	 opacity: 1;
+}
+ .cube:hover .darken {
+	 opacity: 1;
+}
+ .cube:last-child, .cube:nth-child(3) {
+	 margin-right: 0;
+}
+ .darken {
+	 background: rgba(38, 50, 56, 0.85);
+	 height: 100%;
+	 width: 100%;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 opacity: 0;
+	 transition: 0.3s ease;
+}
+ .innerBorder {
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 border: 1px solid #fff;
+	 z-index: 1;
+	 opacity: 0;
+	 transition: 0.5s ease;
+}
+
+@media screen and (max-width: 930px) {
+
+  #cubeWrapper {
+ 	 width: 650px;
+   height:100%;
+ 	 display: flex;
+ 	 flex-direction: column;
+ }
+
+ 
+}
+@media screen and (max-width: 575px) {
+  #cubeWrapper {
+ 	 width: 400px;
+      height:100%;
+ 	 display: flex;
+ 	 flex-direction: column;
+ }
+
+
+}

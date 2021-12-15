@@ -1,0 +1,172 @@
+
+.card-container:hover {
+  box-shadow: 0 40px 40px rgba(0,0,0,.16);
+  transform: translate(0,-20px);
+  transition-delay: 0s !important;
+}
+
+/*.ani-border {
+  display: inline-block;
+  color: #232a31;
+  text-decoration: none;
+}*/
+
+
+
+
+
+
+
+
+
+.card-content-heroic {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  vertical-align: top;
+  text-align: left;
+  height: 124px;
+  padding: 20px;
+}
+
+.card-content {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  vertical-align: top;
+  text-align: left;
+ 
+  padding: 20px;
+}
+
+.card-body {
+  position: relative;
+  clear: both;
+  float: left;
+  width: 100%;
+  overflow: visible;
+  z-index: 2;
+}
+
+.card-blog-intro {
+  opacity: 0.7;
+}
+
+.card-hero {
+  background-color: white;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  clear: both;
+  float: left;
+  overflow: auto;
+  width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 140px;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-heroic .card-image {
+  height: 246px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-heroic-video .card-image {
+  height: 370px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  color: #232a31;
+  margin: 0 0 1rem 0;
+
+  font-size: 18px;
+}
+
+.pb {
+  padding: 0px 0px 20px 0px;
+}
+
+
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35rem;
+  color: #38434F;
+}
+
+p.category {
+  font-size: 12px;
+  color: #A5ACB4;
+  padding-top: 15px;
+}
+
+.card-footer {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+
+
+input {
+  position: absolute;
+  top: 20px;
+  left: 5vw;
+  width: 90vw;
+}
+
+/* Float four columns side by side */
+.card-container {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.blog_container {
+margin-left:20px;
+margin-right: 20px;
+margin-top:50px;
+}
+
+/* Clear floats after the columns */
+.blog_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+  height: 100%;
+  justify-content: flex-start;
+  padding: 0px;
+  width:100%;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .card-container{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
